@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adult BMI Calculator | BMI | CDC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.jpeg">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="header-row">
+      <div class="logo">BMI Checker</div>
+      <nav class="nav">
+        <a href="#bmiex">BMI</a>
+        <a href="#cal">Calculator</a>
+        <a href="#ranges">Ranges</a>
+        <a href="#tips">Tips</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="bmiex">
+
+  <!-- CLICK-TO-OPEN TITLE -->
+  <h1 class="bmi" id="bmiex">Click Here for Knowledge about Body Mass Index</h1>
+
+  <!-- HIDDEN BMI INFORMATION -->
+  <div id="bmiContent" class="bmi-hidden">
+    <div class="para-bg">
+
+      <p class="para">What is BMI?</p>
+      <p class="lead">
+        BMI (Body Mass Index) is a number that shows whether your weight is healthy for your height.
+        It is calculated using a person’s weight (kg) divided by height (m)².
+      </p>
+
+      <p class="para">History of BMI (Body Mass Index)</p>
+      <p class="lead">
+        The Body Mass Index (BMI) was created in the 1830s ...
+      </p>
+
+      <p class="para">Why is BMI Important?</p>
+      <p class="lead">BMI helps you understand your health category:</p>
+      <ul>
+        <li>Underweight</li>
+        <li>Normal weight</li>
+        <li>Overweight</li>
+        <li>Obesity</li>
+      </ul>
+
+      <p class="para">How to Use BMI?</p>
+      <p class="lead">Enter your height and weight.</p>
+
+      <p class="para">Limitations</p>
+      <p class="lead">BMI does not measure body fat directly and may not be accurate for:</p>
+      <ul>
+        <li>Muscular people</li>
+        <li>Children</li>
+        <li>Elderly</li>
+        <li>Pregnant women</li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+  <section id="cal">
+
+    <div class="two-columns">
+
+      <!-- LEFT COLUMN -->
+      <div class="left-column">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" step="1" placeholder="Enter your age">
+
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" step="0.1" placeholder="Enter height in cm">
+
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" step="0.1" placeholder="Enter weight in kg">
+
+        <button id="submitBtn">Submit</button>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-column">
+        <h3>Your BMI Result</h3>
+
+        <div class="result-box">
+
+          <!-- LEFT TEXT SIDE -->
+          <div class="result-text">
+            <p id="outputName"></p>
+            <p id="OutputBMI"></p>
+            <h2 id="bmiCategory" class="bmi-category"></h2>
+            <p id="bmiMessage" class="bmi-message"></p>
+          </div>
+
+          <!-- RIGHT IMAGE SIDE -->
+          <div class="result-image">
+            <img id="bmiImage" src="" alt="">
+          </div>
+
+        </div>
+
+        <!-- COLOR BAR -->
+        <div class="bmi-bar">
+          <div class="bar">
+            <div class="under"></div>
+            <div class="normal"></div>
+            <div class="over"></div>
+            <div class="obese"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="./bmi.js"></script>
+
+</body>
+
+</html>

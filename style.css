@@ -1,0 +1,258 @@
+/* HEADER BACKGROUND */
+
+
+html{
+   scroll-behavior: smooth;
+}
+
+.main-header {
+  background: rgb(96, 186, 255);
+  padding: 15px 25px;
+  /* border-bottom: 1px solid #e5e5e5; */
+  position: sticky;    /* header stays at top while scrolling */
+  top: 0;
+  z-index: 100;
+  margin: 0px;
+}
+
+/* FLEXBOX ROW LAYOUT */
+.header-row {
+  display: flex;
+   height: 80px;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+}
+
+/* LOGO STYLE */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+}
+
+/* NAVIGATION LINKS */
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.nav a:hover {
+  color: #00ff55;
+}
+
+
+#bmiex {
+    margin: 0px;
+    scroll-margin-top: 90px;
+}
+
+.bmi {
+  text-align: center;
+  padding: 20px 15px;
+  background: #d8e1f1; /* light background; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bmi h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15); /* optional */
+}
+
+.bmi .lead {
+  font-size: 18px;
+  color: #9f9e9e;
+
+}
+
+.para{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.para-bg{
+    background: #f4ecec; 
+
+}
+
+#cal{
+    margin: 0px;
+    scroll-margin-top: 80px;
+}
+
+
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;          
+
+  
+  background: #c2b4b4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+#name {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #d5e0ec;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fbfeff;
+}
+
+#name:hover {
+  border-color: #0e0d0d;
+}
+
+.left-column {
+  max-width: 350px; /* keeps it small & neat */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 2px solid #481e1e;
+}
+
+/* Label style */
+.left-column label {
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Unique modern input style */
+.left-column input {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fafafa;
+  outline: none;
+  transition: 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+/* Hover effect */
+.left-column input:hover {
+  border-color: #0e0d0d;
+}
+
+/* Focus effect — stylish blue glow */
+.left-column input:focus {
+  border-color: #4A90E2;
+  background: white;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.35);
+}
+
+/* Placeholder style */
+.left-column input::placeholder {
+  color: #999;
+}
+
+.right-column {
+  border: 3px solid #111010;
+   background: #ebe4e4;
+}
+
+/* Wrap text + image */
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.result-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: none;
+}
+
+.bmi-category {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bmi-message {
+    font-size: 14px;
+    color: #555;
+}
+
+.cat-under { color: #2980b9; }
+.cat-normal { color: #27ae60; }
+.cat-over { color: #e67e22; }
+.cat-obese { color: #c0392b; }
+
+
+#submitBtn {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submitBtn:hover {
+  background: #357ABD;
+}
+
+
+.bmi-category {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.bmi-message {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.cat-under { color: #2980b9; }   /* Blue */
+.cat-normal { color: #27ae60; }  /* Green */
+.cat-over { color: #e67e22; }    /* Orange */
+.cat-obese { color: #c0392b; }   /* Red */
+
+.bmi-hidden {
+  display: none;
+}
+
+.bmi-visible {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+#bmiTitle {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
